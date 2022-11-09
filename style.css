@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --color-main: hsl(0, 0%, 100%);
+    --color-sec: hsl(215, 51%, 70%);
+    --font-main: 'Outfit', sans-serif;
+    --BG-main: hsl(217, 54%, 11%);
+    --BG-card: hsl(216, 50%, 16%);
+    --radius-main: 10px;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--BG-main);
+    font-family: var(--font-main) ;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mainCard {
+    background-color: var(--BG-card);
+    border-radius: var(--radius-main);
+    text-align: center;
+    width: 220px;
+    padding: 15px;
+}
+
+.mainPic {
+    width: 220px;
+    height: 220px;
+    border-radius: var(--radius-main);
+    
+}
+
+.text {
+    color: var(--color-sec);
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.mainHead {
+    color: var(--color-main);
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.priceSec {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-sec);
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.avatarSec {
+    display: flex;
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    color: var(--color-main);
+}
+
+.mainHead:hover {
+    color: hsl(178, 100%, 50%);
+}
+
